@@ -13,18 +13,27 @@ public class HelloJavaFX extends Application {
     @Override
     public void start(Stage stage) {
 
-        Label message = new Label("Welcome Justin Mwinga!");
+        Label message = new Label("Welcome, JUSTINE_MWINGA!");
 
-        Button button = new Button("Start");
+        Button startButton = new Button("Start");
+        Button resetButton = new Button("Reset");
 
-        button.setOnAction(event ->
-            message.setText("Reset")
+        startButton.setOnAction(event ->
+            message.setText("Great! You clicked the button.")
+        );
+
+        resetButton.setOnAction(event ->
+            message.setText("Welcome, JUSTINE_MWINGA!")
         );
 
         VBox layout = new VBox(20);
         layout.setAlignment(Pos.CENTER);
 
-        layout.getChildren().addAll(message, button);
+        layout.getChildren().addAll(
+            message,
+            startButton,
+            resetButton
+        );
 
         Scene scene = new Scene(layout, 500, 300);
 

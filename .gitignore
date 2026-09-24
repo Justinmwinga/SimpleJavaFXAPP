@@ -1,5 +1,5 @@
-.gradle
+.gradle/
 build/
+bin/
 .idea/
-*.iml
-out/
+Screenshoot/

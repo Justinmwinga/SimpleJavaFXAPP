@@ -13,12 +13,12 @@ public class HelloJavaFX extends Application {
     @Override
     public void start(Stage stage) {
 
-        Label message = new Label("Welcome to JavaFX!");
+        Label message = new Label("Welcome Justin Mwinga!");
 
-        Button button = new Button("Click Me");
+        Button button = new Button("Start");
 
         button.setOnAction(event ->
-            message.setText("Great! You clicked the button.")
+            message.setText("Reset")
         );
 
         VBox layout = new VBox(20);
@@ -28,7 +28,7 @@ public class HelloJavaFX extends Application {
 
         Scene scene = new Scene(layout, 500, 300);
 
-        stage.setTitle("My First JavaFX Application");
+        stage.setTitle("My First JavaFX Application - 202500171");
         stage.setScene(scene);
         stage.show();
     }
